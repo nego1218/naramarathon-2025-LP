@@ -103,6 +103,43 @@
             padding-left: 10px;
             transition: all 0.3s ease;
         }
+        
+        /* SVG Icon Styles */
+        .section-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .section-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #ff8a80;
+        }
+        
+        /* Image Styles */
+        .section-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: block;
+            object-fit: cover;
+            border: 4px solid #ff8a80;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -113,33 +150,65 @@
                 
                 <h1 class="about-title">ねごってどんな人？</h1>
                 
+                <!-- Hero Image Placeholder -->
+                <img src="ねごのポートレート.jpg" alt="ねごのポートレート" class="hero-image">
+                
                 <div class="about-section">
-                    <h3>💼 燃え尽き症候群の医師からの再生</h3>
-                    <p>2019年に医師国家試験に合格し、胃腸科医として働いていました。しかし、朝から夜までの過酷な労働で、ある時期「感情がなくなった」という状態になりました。</p>
-                    <p>「こんな生き方で本当にいいのか？」と自問した時、まこなりさんの動画でトライアスロンを知り、人生で初めて持久系スポーツに挑戦しました。</p>
+                    <h3><span class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11 7h2v10h-2V7z"/>
+                            <path d="M7 11h10v2H7v-2z"/>
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </span>医師として働き始めた日々</h3>
+                    <p>2019年、僕は医師になりました。2年間の初期研修を経て、消化器内科医として内視鏡（胃カメラ・大腸カメラなど）・救急診療に従事していました。朝から夜までの過酷な労働で、ある時期「感情がなくなった」という状態になってしまいました。</p>
+                    <p>「こんな生き方で本当にいいのか？」と自問した時、ひょんなことからトライアスロンに挑戦することを決心し、人生で初めて持久系スポーツに挑戦しました。そこからというもの、ランニングにどっぷりハマってしまいました。</p>
                 </div>
                 
                 <div class="about-section">
-                    <h3>🌊 「ねご2.0」誕生の瞬間</h3>
+                    <h3><span class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L14.09 8.26L22 9L16 14.74L17.18 22.02L12 19L6.82 22.02L8 14.74L2 9L9.91 8.26L12 2Z"/>
+                        </svg>
+                    </span>「ねご2.0」誕生の瞬間</h3>
                     <p>1年間の練習を経て、初めてのトライアスロン大会で水泳中に溺れそうになりました。それでも諦めずにゴールした時、心の底から「パラダイムシフト」が起きました。</p>
                     <p>その瞬間、私は気づいたのです。「子ども心を忘れた時、人は死ぬ」と。大人は日常のルーティンや恐れ、社会のプレッシャーによって、本当の自分を失ってしまうのです。</p>
+                    <p>僕はひたすら走るようになりました。</p>
+                    <p>マラソンは僕にとって、「過去の自分への挑戦に夢中になること、そして苦痛を伴う身体的な経験を仲間と共有することで強い絆を形成する活動」になったのです。</p>
+                    
+                    <!-- Triathlon Goal Image Placeholder -->
+                    <img src="トライアスロンゴールシーン.png" alt="トライアスロンゴールシーン" class="section-image">
                 </div>
                 
                 <div class="about-section">
-                    <h3>🎆 NEGORO RUNNING CLUBの誕生</h3>
+                    <h3><span class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="7" cy="9" r="3"/>
+                            <circle cx="17" cy="9" r="3"/>
+                            <path d="M7 14c-2 0-4 1-4 2.5V19h8v-2.5c0-1.5-2-2.5-4-2.5z"/>
+                            <path d="M17 14c-2 0-4 1-4 2.5V19h8v-2.5c0-1.5-2-2.5-4-2.5z"/>
+                        </svg>
+                    </span>NEGORO RUNNING CLUBの誕生</h3>
                     <p>「この体験を、もっと多くの人と分かち合いたい」——そんな想いから、このコミュニティが生まれました。</p>
                     <p>NEGORO RUNNING CLUBは、ただ速く走ることや勝つことが目的ではありません。「子ども心」を取り戻し、コミュニティと一緒に成長できる特別な場所です。</p>
                     <p><strong>「run for myself, run for everyone!!」</strong> —— 自分のために流す汗が、いつしか仲間の背中を押す力になる。そんな体験を一緒にしませんか？</p>
+                    
+                    <!-- Running Community Image Placeholder -->
+                    <img src="ランニングコミュニティ.png" alt="ランニングコミュニティ" class="section-image">
                 </div>
                 
                 <div class="about-section">
-                    <h3>💡 「その一つの気持ち」だけで十分</h3>
+                    <h3><span class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </span>「その一つの気持ち」だけで十分</h3>
                     <p>走力や経験は一切問いません。大切なのは「挑戦してみたい」という、その一つの気持ちだけです。</p>
                     <p>私も最初は初心者でした。でも、今ではフルマラソンを2時50分で走ることを目標にし、アイアンマンレースや100マイルレースにも挑戦しようとしています。</p>
                     <p><strong>大切なのは、あなたの心の中にある「何かを変えたい」という小さな、でも確かな光です。</strong></p>
                 </div>
                 
-                <div class="social-links">
+                <div class="social-links" style="margin-top: 60px;">
                     <h3>ねごの発信チャンネル</h3>
                     <p style="text-align: center; margin-bottom: 20px; color: #e0e0e0;">
                         ランニング報告から人生哲学まで、リアルな体験と思考を発信しています
@@ -150,10 +219,17 @@
                 </div>
                 
                 <div class="about-section">
-                    <h3>🚀 あなたも「自分2.0」を体験しませんか？</h3>
+                    <h3><span class="section-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4l-7 7h4v9h6v-9h4z"/>
+                        </svg>
+                    </span>あなたも「自分2.0」を体験しませんか？</h3>
                     <p>あなたの心が「無理だ」とささやく道こそ、あなたの魂が本当に進みたい道なのかもしれません。岡本太郎の言葉通り、「危険だ、という道は必ず、自分の行きたい道」なのです。</p>
                     <p>私と一緒に、その扉を開けてみませんか？一番連絡しやすいのはInstagramのメッセージです。「奈良マラソン興味あります！」でも「初心者ですが大丈夫ですか？」でも、どんなメッセージでも大歓迎です。</p>
                     <p><strong>きっと、今のあなたとは違う「自分2.0」に出会えるはずです。</strong></p>
+                    
+                    <!-- Inspirational Running Image Placeholder -->
+                    <img src="インスピレーションランニング.png" alt="インスピレーショナルランニング" class="section-image">
                 </div>
                 
                 <div style="text-align: center; margin-top: 40px;">
